@@ -39,12 +39,11 @@ public class Execution {
         stringSimilarElement1.checkOutSimilarity();
 
         System.out.println("\n Task 4");
-        TreeSet <String> treeSet = new TreeSet<>(new StringInDESC());
+        TreeSet<String> treeSet = new TreeSet<>(new StringInDESC());
         treeSet.add("Nectarine");
-        treeSet.add( "Apple");
+        treeSet.add("Apple");
         treeSet.add("Orange");
         treeSet.add("Berry");
         System.out.println("TreeSet in descending order:\n" + treeSet);
     }
 }
-
