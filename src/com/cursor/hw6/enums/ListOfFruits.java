@@ -1,18 +1,16 @@
 package com.cursor.hw6.enums;
 
 public enum ListOfFruits {
-    Apple("Apple", "Red"),
-    Orange("Orange", "Orange"),
-    Grapefruit("Grapefruit", "Pink"),
-    Nectarine("Nectarine", "Yellow"),
-    Berry("Berry", "White");
+    Apple("Apple"),
+    Orange("Orange"),
+    Grapefruit("Grapefruit"),
+    Nectarine("Nectarine"),
+    Berry("Berry");
 
     private String fruit;
-    private String[] config;
 
-    ListOfFruits(String fruit, String color) {
+    ListOfFruits(String fruit) {
         this.fruit = fruit;
-        this.config = new String[]{fruit, color};
     }
 
     public String getName() {
