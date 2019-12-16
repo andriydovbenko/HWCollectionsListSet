@@ -26,6 +26,7 @@ public class ListWithIntegers {
                 if (temp % 3 == 0) {
                     System.out.println("Digit removed: " + temp);
                     listOfDigit.remove(temp);
+                    i--;
                 }
             }
         }
