@@ -1,5 +1,6 @@
 package com.cursor.hw6.replacement.strings;
 
+import java.util.Collections;
 import java.util.List;
 
 public class ListWithFruits {
@@ -9,20 +10,17 @@ public class ListWithFruits {
 
     public ListWithFruits(List<String> fruits) {
         this.listOfFruits = fruits;
+        System.out.println("Original list: " + listOfFruits);
     }
 
     public String replaceOrangeToGrapefruit() {
         String message;
-        if (listOfFruits.isEmpty()) {
-            message = "\nList of fruits is empty";
-        } else if (listOfFruits.contains(valueToReplace)) {
-            while (listOfFruits.contains(valueToReplace)) {
-                listOfFruits.set(listOfFruits.indexOf(valueToReplace), valueAfterReplace);
-                System.out.println(valueToReplace + " has transformed to " + valueAfterReplace);
-            }
-            message = "\nafter replace: " + listOfFruits.toString();
+        if (Collections.replaceAll(listOfFruits, valueToReplace, valueAfterReplace)) {
+            message = "Modified list : " + listOfFruits.toString();
+        } else if (listOfFruits.isEmpty()) {
+            message = "List of fruits is empty";
         } else {
-            message = valueToReplace + "\ndoesn't present inside of this list";
+            message = valueToReplace + " doesn't present inside of this list";
         }
         return message;
     }
