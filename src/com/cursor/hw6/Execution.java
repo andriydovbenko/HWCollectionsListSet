@@ -1,7 +1,5 @@
 package com.cursor.hw6;
 
-import com.cursor.hw6.replacement.objects.Fruit;
-import com.cursor.hw6.replacement.objects.FruitsSubstitute;
 import com.cursor.hw6.enums.ListOfFruits;
 import com.cursor.hw6.replacement.strings.ListWithFruits;
 import com.cursor.hw6.replacement.digits.ListWithIntegers;
@@ -53,18 +51,5 @@ public class Execution {
         treeSet.add(ORANGE);
         treeSet.add(BERRY);
         System.out.println("TreeSet in descending order:\n" + treeSet);
-
-        System.out.println("\n Task 5");
-        List<Fruit> productsList = new ArrayList<>();
-        productsList.add(new Fruit(ListOfFruits.Apple.getNameAndColor()));
-        productsList.add(new Fruit(ListOfFruits.Orange.getNameAndColor()));
-        productsList.add(new Fruit(ListOfFruits.Nectarine.getNameAndColor()));
-        productsList.add(new Fruit(ListOfFruits.Berry.getNameAndColor()));
-        FruitsSubstitute fruitsSubstitute = new FruitsSubstitute(productsList);
-        productsList = fruitsSubstitute.checkList();
-        for (Fruit fruit : productsList) {
-            System.out.println("fruit: " + fruit.getName() + ", color: " +
-                    fruit.getColor() + ", ID: " + fruit.getId() + ".");
-        }
     }
 }

@@ -18,8 +18,4 @@ public enum ListOfFruits {
     public String getName() {
         return fruit;
     }
-
-    public String[] getNameAndColor() {
-        return config;
-    }
 }
