@@ -3,6 +3,6 @@ package com.cursor.hw6;
 public class Main {
 
     public static void main(String[] args) {
-    new Execution().startProject();
+        new Execution().startProject();
     }
 }
