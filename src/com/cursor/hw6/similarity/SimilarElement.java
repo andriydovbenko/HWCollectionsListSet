@@ -14,7 +14,9 @@ public class SimilarElement<T extends Comparable<T>> {
     }
 
     public void checkOutSimilarity() {
-        Set<T> intersection = firstList.stream().filter(secondList::contains).collect(Collectors.toSet());
+        Set<T> intersection = firstList.stream()
+                .filter(secondList::contains)
+                .collect(Collectors.toSet());
         System.out.println((intersection.isEmpty()) ?
                 "There are no similar items between the two lists" :
                 "Similar elements: " + intersection.toString());
