@@ -33,10 +33,8 @@ public class ListWithIntegers {
     }
 
     public void printList() {
-        if (listOfDigit.isEmpty()) {
-            System.out.println("List of Integers is empty");
-        } else {
-            System.out.println("\nafter removing size = " + listOfDigit.size() + "\n" + listOfDigit + "\n");
-        }
+        System.out.println((listOfDigit.isEmpty()) ?
+                "List of Integers is empty" :
+                "\nafter removing size = " + listOfDigit.size() + "\n" + listOfDigit + "\n");
     }
 }
